@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex-container {
+  /* height: 400px; */
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: column; */
+  background-color: lightgray;
+  /* alwayas is on the main axis i.e. x-axis */
+  justify-content: space-around;
+  /* alwayas is on the cross axis i.e. y-axis */
+  align-items: center;
+}
+
+.item {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-color: blueviolet;
+  /* to give same width we use flex grow whenever you stretch the screen it work for minimize the screen we adjust by flex-shrink  */
+  /* flex-grow: 2;
+  flex-shrink: 1; */
+
+  /* combination of 3 properties grow,shrink and basis */
+  /* flex:1 0 100px; */
+
+  /* short hand proprty for above */
+  flex: 1;
+
+  color: aliceblue;
+  /* to align text at center of div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item:nth-of-type(1) {
+  align-self: flex-start;
+
+  /* you set the order without changing html */
+  /* order: 3; */
+
+  /* insted of width you use flex-basis it work exactly like width */
+  /* width: 200px; */
+  /* flex-basis: 200px; */
+
+  /* to give width with growing according to display */
+  /* flex-grow: 3; */
+}
+.item:nth-of-type(2) {
+  /* align-self: flex-end; */
+  order: 1;
+
+  /* flex-grow: 1; */
+}
+.item:nth-of-type(3) {
+  /* align-self: flex-end; */
+  order: 2;
+
+  /* flex-grow: 1; */
+}

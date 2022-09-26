@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.nav{
+    text-decoration: none;
+    list-style: none;
+}
+
+.section .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.section .container div{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+.section_1{
+    align-self: center;
+}
